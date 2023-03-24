@@ -1,8 +1,8 @@
-/*Dado o tamanho da base e da altura de um retângulo, calcular a sua área e o seu perímetro*/
+/*Dado o tamanho da base e da altura de um retangulo, calcular a sua area e o seu perimetro*/
 
 #include <stdio.h>
 
-int main()
+int main(void)
 {
   
   int altura, base, area, perimetro;
@@ -21,4 +21,6 @@ int main()
   perimetro = 2*(base + altura);
 
   printf("Um trinagulo com base de: %i e altura de: %i tem perimetro de: %i e area de %i \n\n", base, altura, perimetro, area);
+  
+  return 0;
 }
