@@ -2,31 +2,40 @@
 
 #include <stdio.h>
 
-int main(void) {
+int main(void)
+{
 	int num[10], compara;
-	
+
 	printf("------------------------------\n");
 	printf("       Lista de numeros       \n");
 	printf("------------------------------");
 
-	for(int i = 1; i <= 10; i++) {
+	for (int i = 1; i <= 10; i++)
+	{
 		printf("\nInforme o %d numero: ", i);
 		scanf("%d", &compara);
-		for(int in = 0; in < i; in++) {
-			if(in == 0) {
+		for (int in = 0; in < i; in++)
+		{
+			if (in == 0)
+			{
 				num[i] = compara;
-			} else if(num[in] != compara) {
+			}
+			else if (num[in] != compara)
+			{
 				num[i] = compara;
-			} else {
+			}
+			else
+			{
 				printf("Numero repitido, favor informar outro numero.\n");
 				i--;
 				break;
 			}
 		}
 	}
-	for(int index = 1; index <= 10; index++) {
+	for (int index = 1; index <= 10; index++)
+	{
 		printf("%d ", num[index]);
 	}
-	
+
 	return 0;
 }
