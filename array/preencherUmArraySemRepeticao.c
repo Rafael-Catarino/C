@@ -5,15 +5,14 @@
 
 int arrNum[10];
 
-int cabecalho(void)
+void cabecalho()
 {
   printf("--------------------------------\n");
   printf(" Lista de numeros sem repeticao \n");
   printf("--------------------------------\n");
-  return 0;
 }
 
-int validaNumero(void)
+void validaNumero()
 {
   int numero;
 
@@ -39,16 +38,14 @@ int validaNumero(void)
       }
     }
   }
-  return 0;
 }
 
-int imprimeNaTela(void)
+void imprimeNaTela()
 {
   for (int i = 1; i <= 10; i++)
   {
     printf("Numero %d foi: %d \n", i, arrNum[i]);
   }
-  return 0;
 }
 
 int main(void)
@@ -59,4 +56,5 @@ int main(void)
   system("clear");
   cabecalho();
   imprimeNaTela();
+  return 0;
 }

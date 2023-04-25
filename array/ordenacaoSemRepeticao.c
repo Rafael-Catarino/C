@@ -5,15 +5,14 @@
 
 int arrNum[10];
 
-int cabecalho(void)
+void cabecalho()
 {
   printf("------------------------------\n");
   printf("       Lista de numeros       \n");
   printf("------------------------------\n");
-  return 0;
 }
 
-int pegaNumero(void)
+void pegaNumero()
 {
   int numero;
   for (int i = 1; i <= 10; i++)
@@ -38,10 +37,9 @@ int pegaNumero(void)
       }
     }
   }
-  return 0;
 }
 
-int ordenaNumero(void)
+void ordenaNumero()
 {
   int aux;
   for (int i = 1; i <= 10; i++)
@@ -56,16 +54,14 @@ int ordenaNumero(void)
       }
     }
   }
-  return 0;
 }
 
-int mostraNumero(void)
+void mostraNumero()
 {
   for (int i = 1; i <= 10; i++)
   {
     printf("%d - ", arrNum[i]);
   }
-  return 0;
 }
 
 int main(void)

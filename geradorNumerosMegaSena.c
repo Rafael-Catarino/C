@@ -4,15 +4,14 @@
 
 int arrNum[6];
 
-int cabecalho(void)
+void cabecalho()
 {
     printf("------------------------------\n");
     printf("Sorteando Numeros da Mega Sena\n");
     printf("------------------------------\n");
-    return 0;
 }
 
-int sorteandoNumeros(void)
+void sorteandoNumeros()
 {
     int sorteio;
     srand(time(NULL));
@@ -25,10 +24,9 @@ int sorteandoNumeros(void)
         }
         arrNum[i] = sorteio;
     }
-    return 0;
 }
 
-int ordenaNumero(void)
+void ordenaNumero()
 {
     int aux;
     for (int i = 0; i < 6; i++)
@@ -43,16 +41,14 @@ int ordenaNumero(void)
             }
         }
     }
-    return 0;
 }
 
-int mostraNumeros(void)
+void mostraNumeros()
 {
     for (int j = 0; j < 6; j++)
     {
         printf("%d - ", arrNum[j]);
     }
-    return 0;
 }
 
 int main(void)

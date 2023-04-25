@@ -6,35 +6,52 @@ misturar latas e galoes, de forma que o desperdício de tinta seja menor. Acresc
 
 #include <stdio.h>
 
-int main(void) 
+int main(void)
 {
   float area, litros;
 
   printf("Informe o tamanho da area que vai ser pintada (em metros quadrados): ");
   scanf("%f", &area);
 
-  litros = area/6;
+  litros = area / 6;
 
   printf("Voce vai gastar: %.2f litros.\n\n", litros);
 
-  if(litros < 10.8) {
-    if(litros < 3.6) {
+  if (litros < 10.8)
+  {
+    if (litros < 3.6)
+    {
       printf("Voce vai precisar comprar 1 galao de 3,6 litros. Valor: R$ 25,00\n\n");
-    } else if(litros < 7.2) {
+    }
+    else if (litros < 7.2)
+    {
       printf("Voce vai precisar comprar 2 galoes de 3,6 litros. Valor: R$ 50,00\n\n");
-    } else {
+    }
+    else
+    {
       printf("Voce vai precisar comprar 3 galoes de 3,6 litros. Valor: R$ 75,00\n\n");
     }
-  } else if(litros < 18) {
+  }
+  else if (litros < 18)
+  {
     printf("Voce vai precisar comprar 1 galao de 18 litros. Valor: R$ 80,00\n\n");
-  } else if(litros >= 18) {
-    if(litros < 21.6) {
+  }
+  else if (litros >= 18)
+  {
+    if (litros < 21.6)
+    {
       printf("Voce vai precisar comprar 1 galao de 18 litros e 1 de 3.6 litros. Valor: R$ 105,00\n\n");
-    } else if(litros < 25.2) {
+    }
+    else if (litros < 25.2)
+    {
       printf("Voce vai precisar comprar 1 galoes de 18 litros e 2 de 3.6 litros. Valor: R$ 130,00\n\n");
-    } else if(litros < 28.8) {
+    }
+    else if (litros < 28.8)
+    {
       printf("Voce vai precisar comprar 1 galoes de 18 litros e 1 de 3.6 litros. Valor: R$ 150,00\n\n");
-    } else {
+    }
+    else
+    {
       printf("Voce vai precisar comprar 2 galoes de 18 litros Valor: R$ 160,00\n\n");
     }
   };
