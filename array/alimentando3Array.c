@@ -1,4 +1,4 @@
-/* Faça um programa que alimente 3 vetores com no maximo 50 posicoes com os seguintes dados dos alunos: Matricula, nota1 e nota2. Sabendo que na turma posso ter menos de 50 alunos.*/
+/* Faça um programa que alimente 3 vetores com no maximo 50 posicoes com os seguintes dados dos alunos: Matricula, nota1, nota2, nota3, nota4. Ao final o programa deve mostrar a Matricula, nota1, nota2, nota3, nota4 e media.*/
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -6,12 +6,11 @@
 int mat[10], i = 0;
 float nota1[10], nota2[10], nota3[10], nota4[10], media[10];
 
-int cabecalho(void)
+void cabecalho()
 {
   printf("------------------------------\n");
   printf("      Cadastro de Aluno       \n");
   printf("------------------------------\n");
-  return 0;
 }
 
 float calculaMedia()
@@ -21,7 +20,7 @@ float calculaMedia()
   return med;
 }
 
-int pegaAluno(void)
+void pegaAluno()
 {
   printf("Matricula: ");
   scanf("%d", &mat[i]);
@@ -41,16 +40,14 @@ int pegaAluno(void)
     printf("Matricula: ");
     scanf("%d", &mat[i]);
   }
-  return 0;
 }
 
-int mostraAluno(void)
+void mostraAluno()
 {
   for (int j = 0; j < i; j++)
   {
     printf("%.2d - %.2f - %.2f - %.2f - %.2f - %.2f\n", mat[j], nota1[j], nota2[j], nota3[j], nota4[j], media[j]);
   }
-  return 0;
 }
 
 int main(void)

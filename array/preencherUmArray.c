@@ -6,31 +6,28 @@ Dividi o codigo em funções para ficar melhor legivel e facilitar manuteções 
 
 int num[10];
 
-int cabecalho(void)
+void cabecalho()
 {
   printf("------------------------------\n");
   printf("       Lista de numeros       \n");
   printf("------------------------------\n");
-  return 0;
 }
 
-int pegaNumero(void)
+void pegaNumero()
 {
   for (int i = 0; i < 10; i++)
   {
     printf("Informe o %d numero: ", i + 1);
     scanf("%d", &num[i]);
   }
-  return 0;
 }
 
-int mostrarNumeros(void)
+void mostrarNumeros()
 {
   for (int i = 0; i < 10; i++)
   {
     printf("Numero %d foi: %d \n", i + 1, num[i]);
   }
-  return 0;
 }
 
 int main(void)

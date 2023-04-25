@@ -29,18 +29,7 @@ int main(void)
 		}
 	}
 
-	for (int i = 1; i <= 10; i++)
-	{
-		for (int j = 1; j <= 10; j++)
-		{
-			if (num[i] < num[j])
-			{
-				aux = num[i];
-				num[i] = num[j];
-				num[j] = aux;
-			}
-		}
-	}
+	
 
 	for (int index = 1; index <= 10; index++)
 	{
