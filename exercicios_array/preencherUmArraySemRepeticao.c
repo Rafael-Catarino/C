@@ -1,4 +1,4 @@
-/*Faca um programa que preencha um vetor numerico de 10 posicoes com valores digitados pelo o usuario, porem que nao deixe entrar numeros repitidos.*/
+/*Faca um programa que preencha um vetor numerico de 10 posicoes com valores digitados pelo o usuario, porem que nao deixe entrar numeros repetidos.*/
 
 #include <stdio.h>
 #include <stdlib.h>

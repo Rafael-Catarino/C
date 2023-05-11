@@ -1,3 +1,5 @@
+/*Faça um programa que peça nome, matricula, nota1, nota2, nota3, nota4 de 10 alunos  guarde em um array de struct e no final mostre o nome, a matricula, as notas e a media */
+
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -6,6 +8,7 @@ struct ficha_aluno
   char nome[20];
   long int matricula;
   float nota1, nota2, nota3, nota4, media;
+  char resp[10];
 };
 
 struct ficha_aluno aluno[10];
@@ -48,11 +51,11 @@ void mostraAluno()
   {
     printf("Nome: %s\n", aluno[j].nome);
     printf("Matricula: %ld\n", aluno[j].matricula);
-    printf("nota1: %.2f\n", aluno[j].nota1);
-    printf("nota2: %.2f\n", aluno[j].nota2);
-    printf("nota3: %.2f\n", aluno[j].nota3);
-    printf("nota4: %.2f\n", aluno[j].nota4);
-    printf("media: %.2f\n", aluno[j].media);
+    printf("Nota1: %.2f\n", aluno[j].nota1);
+    printf("Nota2: %.2f\n", aluno[j].nota2);
+    printf("Nota3: %.2f\n", aluno[j].nota3);
+    printf("Nota4: %.2f\n", aluno[j].nota4);
+    printf("Media: %.2f\n", aluno[j].media);
     printf("------------------------------\n");
     j++;
   }
