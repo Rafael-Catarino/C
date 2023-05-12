@@ -1,5 +1,5 @@
 /*Faca um programa que preencha um array numerico de 10 posições com valores digitados pelo o usuario.
-Dividi o codigo em funções para ficar melhor legivel e facilitar manuteções futuras.*/
+OBS: Dividi o codigo em funções para ficar melhor legivel e facilitar manuteções futuras.*/
 
 #include <stdio.h>
 #include <stdlib.h>
