@@ -43,7 +43,7 @@ printf("\nNota 1...: %.2f", aluno.nota1);
 printf("\nNota 2...: %.2f", aluno.nota2);
 printf("\nNota 3...: %.2f", aluno.nota3);
 printf("\nNota 4...: %.2f", aluno.nota4);
-printf("\nNota.....: %.2f", aluno.media);
+printf("\nMedia.....: %.2f", aluno.media);
 
   return 0;
 }
